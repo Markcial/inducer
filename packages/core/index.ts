@@ -1,16 +1,16 @@
 //
-export type Action = unknown & string;
-export type State<S extends {} = {}> = S;
-type Payload<S extends {} = {}> = Partial<S>;
-type Listener<S extends {} = {}> = (state:S, action: Action) => void;
-type Reducer<S extends {} = {}> = (state:S, payload: Payload<S>) => S;
-type Router<S extends {} = {}> = Record<Action, Reducer<S>>;
-export type CreateResult<S extends State = {}> = {
+export type Action = string;
+export type State<S extends {}> = S;
+type Payload<S extends {}> = Partial<S>;
+type Listener<S extends {}> = (state:S, action: Action) => void;
+type Reducer<S extends {}> = (state:S, payload: Payload<S>) => S;
+type Router<S extends {}> = Record<Action, Reducer<S>>;
+export type CreateResult<S extends {}> = {
   route: (action: Action, reducer: Reducer<S>) => void;
   dispatch: (action: Action, payload?: Payload<S>) => void;
-  listen: (listener: Listener) => void;
+  listen: (listener: Listener<S>) => void;
 }
-export const create = <S extends {} = {}>(initState: S): CreateResult<S> => {
+export const create = <S extends {}>(initState: S): CreateResult<S> => {
   let state: S = initState;
   let listeners: Listener<S>[] = [];
   let router: Router<S> = {};

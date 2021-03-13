@@ -1,7 +1,7 @@
 import * as React from "react";
 import { create, CreateResult, State } from "@inducer/core";
 
-export const createContext = <S extends State = {}>(initState: S) => {
+export const createContext = <S extends Record<string, unknown>>(initState: S) => {
   type Context = { state: S } & CreateResult<S>;
   const Context = React.createContext<Context>({
     state: initState,
