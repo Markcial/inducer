@@ -12,7 +12,7 @@ I found myself writting a lot of reducer actions over the time, and one of the t
 
 This reducer comes with zero dependencies, the only ones you will find are for testing and development. You could even grab the inducer file and place it inside your project.
 
-## Usage
+## Usage
 
 As simple as:
 
