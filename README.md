@@ -1,7 +1,7 @@
 # Inducer
 UI agnostic dynamic reducer
 
-## Reducers choices on the market
+## Other reducer choices
 
  * https://redux.js.org/ Powerful, but complex
  * https://reactjs.org/docs/hooks-reference.html#usereducer tied to react, fixed reducer, can't be extended
