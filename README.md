@@ -10,7 +10,7 @@ UI agnostic dynamic reducer
 
 I found myself writting a lot of reducer actions over the time, and one of the things I would like to have, is the chance to extend those reductions wherever they had more meaning. Redux can help you on that, but there is a lot of overhead when you add redux on some codebases. I tried to work out a minimal concept, all the complexity it's stored in a single TS, typed file
 
-This reducer comes with zero dependencies, the only ones you will find are for testing and development. You could even grab the reducer file and place it inside your project.
+This reducer comes with zero dependencies, except for testing and development. You could even grab the reducer file and place it inside your project.
 
 ## Usage
 
