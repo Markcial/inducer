@@ -1,6 +1,6 @@
 # NodeJS Inducer examples
 
-## Timer
+## Timer
 
 ```
 yarn see:timer
