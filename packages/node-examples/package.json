@@ -1,0 +1,12 @@
+{
+  "name": "@inducer/node-examples",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "see:timer": "ts-node src/timer.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^9.1.1"
+  }
+}
